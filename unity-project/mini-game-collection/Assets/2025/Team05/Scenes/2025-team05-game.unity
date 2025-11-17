@@ -1165,8 +1165,8 @@ MonoBehaviour:
   <TimeFloat>k__BackingField: 0
   <DebugMode>k__BackingField: 0
   <DebugGameTime>k__BackingField: 10
-  <CountDownStartMessage>k__BackingField: Shoot!
-  <MaxGameTime>k__BackingField: -278729886
+  <CountDownStartMessage>k__BackingField: DRIVE!
+  <MaxGameTime>k__BackingField: -1828884459
   <Winner>k__BackingField: 0
   <AuthorCredits>k__BackingField:
   - "Rapha\xEBl T\xE9treault"
@@ -6165,6 +6165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 6084373131853840424, guid: 6911a481a18951f4c92b772aceb8d995,
+        type: 3}
+      propertyPath: <ScoreKeeper>k__BackingField
+      value: 
+      objectReference: {fileID: 243674066}
     - target: {fileID: 8038362299684736418, guid: 6911a481a18951f4c92b772aceb8d995,
         type: 3}
       propertyPath: m_LocalPosition.x

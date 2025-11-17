@@ -58,6 +58,12 @@ namespace MiniGameCollection.Games2025.Team05
 
             // Handle hit timer
             HandleHitTimer();
+
+            HandlePlayerScore();
+        }
+
+        private void HandlePlayerScore()
+        {
         }
 
         // Hit timer for flashing player sprite, as well as disabling player collision

@@ -1,5 +1,4 @@
 using MiniGameCollection;
-using MiniGameCollection.Games2025.Team00; // Fix this
 using System;
 using UnityEngine;
 

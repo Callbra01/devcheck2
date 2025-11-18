@@ -10,6 +10,8 @@ namespace MiniGameCollection.Games2025.Team05
         [field: SerializeField] public PlayerID PlayerID { get; private set; }
         [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
         [field: SerializeField] public float PlayerMoveSpeed { get; private set; } = 20f;
+        [field: SerializeField] public ScoreKeeper ScoreKeeper { get; private set; }
+        [field: SerializeField] public MiniGameManager GameManager { get; private set; }
 
         private bool isHitTimerActive = false;
         private float hitTimer = 0;
@@ -64,6 +66,10 @@ namespace MiniGameCollection.Games2025.Team05
 
         private void HandlePlayerScore()
         {
+            if (GameManager.State != MiniGameManagerState.TimerRunning)
+                return;
+
+            ScoreKeeper.instance.AddScore(this.PlayerID, 10);
         }
 
         // Hit timer for flashing player sprite, as well as disabling player collision

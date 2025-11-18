@@ -2612,9 +2612,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 927065764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a96a257186946c44933f16290951502, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b6b6dfa00e02234abc2f327ac079ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <GameManager>k__BackingField: {fileID: 812188702}
   movingRight: 0
   moveSpeed: 10
   resetOffset: 12.58
@@ -2822,7 +2823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1073937359}
   m_Layer: 0
-  m_Name: bGame
+  m_Name: Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3879,7 +3880,6 @@ GameObject:
   - component: {fileID: 1660787402}
   - component: {fileID: 1660787405}
   - component: {fileID: 1660787404}
-  - component: {fileID: 1660787403}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -3902,21 +3902,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1640566374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1660787403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660787401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a96a257186946c44933f16290951502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movingRight: 0
-  moveSpeed: 10
-  resetOffset: 12.58
 --- !u!483693784 &1660787404
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -6167,6 +6152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6084373131853840424, guid: 6911a481a18951f4c92b772aceb8d995,
         type: 3}
+      propertyPath: <GameManager>k__BackingField
+      value: 
+      objectReference: {fileID: 812188702}
+    - target: {fileID: 6084373131853840424, guid: 6911a481a18951f4c92b772aceb8d995,
+        type: 3}
       propertyPath: <ScoreKeeper>k__BackingField
       value: 
       objectReference: {fileID: 243674066}
@@ -6238,6 +6228,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 3410729775648023511, guid: 19c65769be29ade47b384d37ad3d94f7,
+        type: 3}
+      propertyPath: <GameManager>k__BackingField
+      value: 
+      objectReference: {fileID: 812188702}
+    - target: {fileID: 3410729775648023511, guid: 19c65769be29ade47b384d37ad3d94f7,
+        type: 3}
+      propertyPath: <ScoreKeeper>k__BackingField
+      value: 
+      objectReference: {fileID: 243674066}
     - target: {fileID: 4820902481064425025, guid: 19c65769be29ade47b384d37ad3d94f7,
         type: 3}
       propertyPath: m_LocalPosition.x

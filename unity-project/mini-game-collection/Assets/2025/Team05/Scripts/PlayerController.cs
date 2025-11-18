@@ -7,6 +7,7 @@ namespace MiniGameCollection.Games2025.Team05
 {
     public class PlayerController : MonoBehaviour
     {
+        //Test
         [field: SerializeField] public PlayerID PlayerID { get; private set; }
         [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
         [field: SerializeField] public float PlayerMoveSpeed { get; private set; } = 20f;

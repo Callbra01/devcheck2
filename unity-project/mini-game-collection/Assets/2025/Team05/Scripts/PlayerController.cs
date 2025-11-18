@@ -17,6 +17,8 @@ namespace MiniGameCollection.Games2025.Team05
         private float hitTimer = 0;
         private float hitTimerMax = 2.0f;
 
+        private bool canMove = false;
+
         private SpriteRenderer[] spriteRenderers;
 
         private void Start()
@@ -55,8 +57,11 @@ namespace MiniGameCollection.Games2025.Team05
                 newPosition.y = Mathf.Clamp(newPosition.y, -2.988448f, 0.0f);
             }
 
-            // Move rigidbody
-            Rigidbody2D.MovePosition(newPosition);
+            if (canMove)
+            {
+                // Move rigidbody
+                Rigidbody2D.MovePosition(newPosition);
+            }
 
             // Handle hit timer
             HandleHitTimer();
@@ -68,6 +73,11 @@ namespace MiniGameCollection.Games2025.Team05
         {
             if (GameManager.State != MiniGameManagerState.TimerRunning)
                 return;
+
+            if (!canMove)
+            {
+                canMove = true;
+            }
 
             ScoreKeeper.instance.AddScore(this.PlayerID, 10);
         }

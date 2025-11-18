@@ -148,6 +148,8 @@ namespace MiniGameCollection.Games2025.Team05
             if (collision.gameObject.GetComponent<TagScorebar>() != null)
             {
                 Component component = collision.gameObject.GetComponent<TagScorebar>();
+                ScoreKeeper.AddScore(this.PlayerID, 500);
+
 
             }
         }
